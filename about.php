@@ -122,68 +122,85 @@
             <img src="img/myimg.png" class="side-img">
         </div>
     </div>
-    <footer class="footer-section">
-        <div class="inside-footer">
-            <div class="ist-row321">
-                <div class="footer-logo">
-               <img src="img/aplogo-preview.png" alt="" height="50px" width="50px" class="ist-row-img">
+          <footer class="footer-section">
+   <div class="row">
+      <!-- First Column -->
+      <div class="col-lg-3 col-md-12 col-sm-12">
+         <div class="ist-row12">
+            <div class="footer-logo">
+               <img src="img/aplogo-preview.png" alt="Atal Parivahan Logo" height="50" width="50" class="ist-row-img">
+            </div>
+            <p>Established in the year 2005, we Atal Parivahan are one of the fastest growing companies in the sector of packers and movers.</p>
+            <div class="icons-footer">
+               <span class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
+               <span class="insta"><i class="fa-brands fa-instagram"></i></span>
+               <span class="twit"><i class="fa-brands fa-twitter"></i></span>
+               <span class="in"><i class="fa-brands fa-linkedin"></i></span>
+            </div>
+         </div>
+      </div>
+
+      <!-- Second Column -->
+      <div class="col-lg-3 col-md-6 col-6">
+         <div class="second-row-1">
+            <h4>Information</h4>
+            <ul class="info-list">
+               <li><button class="second-row-button-1"><a href="myproject.php">Home</a></button></li>
+               <li><button class="second-row-button-1"><a href="about.php">About Us</a></button></li>
+               <li><button class="second-row-button-1"><a href="services.php">Services</a></button></li>
+            </ul>
+         </div>
+      </div>
+
+      <!-- Third Column -->
+      <div class="col-lg-3 col-md-6 col-6">
+         <div class="third-row-1">
+            <h4>Quick Links</h4>
+            <ul class="info-list">
+               <li><button class="second-row-button-1">Carriers</button></li>
+               <li><button class="second-row-button-1"><a href="contact-us.php">Contact Us</a></button></li>
+               <li><button class="second-row-button-1"><a href="quote.php">Quote</a></button></li>
+            </ul>
+         </div>
+      </div>
+
+      <!-- Fourth Column -->
+      <div class="col-lg-3 col-md-12 col-sm-12">
+         <div class="fourth-row">
+            <h4>Contact Us</h4>
+
+            <div class="for-address">
+               <div class="home-icon">
+                  <span><i class="fa-solid fa-house"></i></span>
                </div>
-               <p>Established in the year 2005, we Atal Parivahan are one of the fastest growing companies in the sector of packers and movers.</p>
-               <div class="icons-footer">
-               <span class="facebook"> <i class="fa-brands fa-facebook-f"></i></span>
-                <span class="insta"> <i class="fa-brands fa-instagram"></i></span>
-                <span class="twit"> <i class="fa-brands fa-twitter"></i></span>
-                <span class="in"> <i class="fa-brands fa-linkedin"></i></span>
-                </div>
+               <div class="address-content">
+                  <p>C-353, Sector-7 Dwarka, New Delhi - 110075 (India)</p>
+                  <p>Atal Parivahan, Shop No 1, Kh. 520/25, Bijwasan, New Delhi - 110061 (India)</p>
+               </div>
             </div>
-            <div class="second-row">
-                <h4>Information</h4>
-                <ul class="info-list">
-                  <li><button class="second-row-button">Home</button></li>
-                  <li><button class="second-row-button">About Us</button></li>
-                  <li><button class="second-row-button">Services</button></li>
-                </ul>
+
+            <div class="for-email">
+               <div class="email-icon">
+                  <span><i class="fa-solid fa-envelope"></i></span>
+               </div>
+               <div class="email-content">
+                  <p>atalparivahan@gmail.com</p>
+               </div>
             </div>
-            <div class="third-row">
-                <h4>Quick Links</h4>
-                <ul class="info-list">
-                  <li><button class="second-row-button">Carriers</button></li>
-                  <li> <button class="second-row-button">Contact Us</button></li>
-                  <li><button class="second-row-button">Services</button></li>
-                </ul>
+
+            <div class="for-phone">
+               <div class="phone-icon">
+                  <span><i class="fa-solid fa-phone"></i></span>
+               </div>
+               <div class="phone-content">
+                  <p>9873651414</p>
+                  <p>9873351414</p>
+               </div>
             </div>
-            <div class="fourth-row">
-                <h4>Contact Us</h4>
-                <div class="for-address">
-                    <div class="home-icon">
-                        <span><i class="fa-solid fa-house"></i></i></span>
-                    </div>
-                    <div class="address-content">
-                        <p>C-353, Sector-7 Dwarka, New Delhi -110075</p>
-                        <p>(India)</p>
-                        <p>Atal Parivahan, Shop No 1, Kh. 520/25, Bijwasan, New Delhi - 110061</p>
-                    </div>
-                </div>
-                <div class="for-email">
-                    <div class="email-icon">
-                        <span> <i class="fa-solid fa-envelope"></i></span>
-                        </div>
-                        <div class="email-content">
-                        <p>atalparivahan@gmail.com</p>
-                    </div>
-                </div>
-                <div class="for-phone">
-                    <div class="phone-icon">
-                        <span><i class="fa-solid fa-phone"></i></span>
-                    </div>
-                    <div class="phone-content">
-                        <p>9873651414</p>
-                        <p>9873351414</p>
-                    </div>
-                </div>
-            </div>
-              </div>
-              </footer>
+         </div>
+      </div>
+   </div>
+</footer>
             <div class="lower-section">
                 <div class="lower-para">
                 <p class="privacy-policy">

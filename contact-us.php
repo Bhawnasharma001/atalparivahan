@@ -61,31 +61,48 @@
     </div>
     <!-- --============== contact us section ===============-- -->
       <div class="contact-section">
-          <div class="form-section">
-            <div class="form-heading">
-                <h3>Get In Touch </h3>
-            </div>
-            <div class="name-section">
-                <input type="text" placeholder="Enter Your First Name" class="first-name" required>
-                <input type="text" placeholder="Enter Your Last Name" class="first-name">
-            </div>
-            <div class="second-sec">
-                <input type="email" placeholder="Email" class="second-input">
-                <input type="number" placeholder="Phone" class="second-input" required>
-            </div>
-            <div class="third-section">
-                <input type="date" placeholder="Enter Date" class="date-input" required>
-            </div>
-            <div class="fourth-section">
-                <input type="text" placeholder="Address" class="address-input" required>
-            </div>
-            <div class="last-section">
-                <input type="textarea" placeholder="Type Your Requirment Here" class="message-input" required>
-            </div>
-            <div class="buttons-section">
-                <input type="submit" class="submit-button">
-            </div>
+          <div class="container my-5">
+  <div class="card shadow-lg p-4">
+    <h3 class="mb-4 text-center">Get In Touch</h3>
+    <form>
+      <div class="row g-3">
+        <!-- First Name -->
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Enter Your First Name" required>
         </div>
+        <!-- Last Name -->
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Enter Your Last Name">
+        </div>
+        <!-- Email -->
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Email" required>
+        </div>
+        <!-- Phone -->
+        <div class="col-md-6">
+          <input type="number" class="form-control" placeholder="Phone" required>
+        </div>
+        <!-- Date -->
+        <div class="col-md-6">
+          <input type="date" class="form-control" required>
+        </div>
+        <!-- Address -->
+        <div class="col-12">
+          <input type="text" class="form-control" placeholder="Address" required>
+        </div>
+        <!-- Message -->
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Type Your Requirement Here" required></textarea>
+        </div>
+        <!-- Submit Button -->
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary px-5">Submit</button>
+        </div>
+      </div>
+    </form>
+</div>
+</div>
+
     </div>
      <!-- --==================End Contact us section==============---- -->
     <div class="testimonials-section">
@@ -236,66 +253,85 @@
             </div>
         </div>
     </div>
-    <footer class="footer-section">
-        <div class="inside-footer">
-            <div class="ist-row321">
-               <img src="img/aplogo-preview.png" alt="" height="50px" width="50px" class="ist-row-img">
-               <p>Established in the year 2005, we Atal Parivahan are one of the fastest growing companies in the sector of packers and movers.</p>
-               <div class="icons-footer">
-               <span class="facebook"> <i class="fa-brands fa-facebook-f"></i></span>
-                <span class="insta"> <i class="fa-brands fa-instagram"></i></span>
-                <span class="twit"> <i class="fa-brands fa-twitter"></i></span>
-                <span class="in"> <i class="fa-brands fa-linkedin"></i></span>
-                </div>
+          <footer class="footer-section">
+   <div class="row">
+      <!-- First Column -->
+      <div class="col-lg-3 col-md-12 col-sm-12">
+         <div class="ist-row12">
+            <div class="footer-logo">
+               <img src="img/aplogo-preview.png" alt="Atal Parivahan Logo" height="50" width="50" class="ist-row-img">
             </div>
-            <div class="second-row">
-                <h4>Information</h4>
-                <ul class="info-list">
-                  <li><button class="second-row-button">Home</button></li>
-                  <li><button class="second-row-button">About Us</button></li>
-                  <li><button class="second-row-button">Services</button></li>
-                </ul>
+            <p>Established in the year 2005, we Atal Parivahan are one of the fastest growing companies in the sector of packers and movers.</p>
+            <div class="icons-footer">
+               <span class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
+               <span class="insta"><i class="fa-brands fa-instagram"></i></span>
+               <span class="twit"><i class="fa-brands fa-twitter"></i></span>
+               <span class="in"><i class="fa-brands fa-linkedin"></i></span>
             </div>
-            <div class="third-row">
-                <h4>Quick Links</h4>
-                <ul class="info-list">
-                  <li><button class="second-row-button">Carriers</button></li>
-                  <li> <button class="second-row-button">Contact Us</button></li>
-                  <li><button class="second-row-button">Services</button></li>
-                </ul>
+         </div>
+      </div>
+
+      <!-- Second Column -->
+      <div class="col-lg-3 col-md-6 col-6">
+         <div class="second-row-1">
+            <h4>Information</h4>
+            <ul class="info-list">
+               <li><button class="second-row-button-1"><a href="myproject.php">Home</a></button></li>
+               <li><button class="second-row-button-1"><a href="about.php">About Us</a></button></li>
+               <li><button class="second-row-button-1"><a href="services.php">Services</a></button></li>
+            </ul>
+         </div>
+      </div>
+
+      <!-- Third Column -->
+      <div class="col-lg-3 col-md-6 col-6">
+         <div class="third-row-1">
+            <h4>Quick Links</h4>
+            <ul class="info-list">
+               <li><button class="second-row-button-1">Carriers</button></li>
+               <li><button class="second-row-button-1"><a href="contact-us.php">Contact Us</a></button></li>
+               <li><button class="second-row-button-1"><a href="quote.php">Quote</a></button></li>
+            </ul>
+         </div>
+      </div>
+
+      <!-- Fourth Column -->
+      <div class="col-lg-3 col-md-12 col-sm-12">
+         <div class="fourth-row">
+            <h4>Contact Us</h4>
+
+            <div class="for-address">
+               <div class="home-icon">
+                  <span><i class="fa-solid fa-house"></i></span>
+               </div>
+               <div class="address-content">
+                  <p>C-353, Sector-7 Dwarka, New Delhi - 110075 (India)</p>
+                  <p>Atal Parivahan, Shop No 1, Kh. 520/25, Bijwasan, New Delhi - 110061 (India)</p>
+               </div>
             </div>
-            <div class="fourth-row">
-                <h4>Contact Us</h4>
-                <div class="for-address">
-                    <div class="home-icon">
-                        <span><i class="fa-solid fa-house"></i></i></span>
-                    </div>
-                    <div class="address-content">
-                        <p>C-353, Sector-7 Dwarka, New Delhi -110075</p>
-                        <p>(India)</p>
-                        <p>Atal Parivahan, Shop No 1, Kh. 520/25, Bijwasan, New Delhi - 110061</p>
-                    </div>
-                </div>
-                <div class="for-email">
-                    <div class="email-icon">
-                        <span> <i class="fa-solid fa-envelope"></i></span>
-                        </div>
-                        <div class="email-content">
-                        <p>atalparivahan@gamil.com</p>
-                    </div>
-                </div>
-                <div class="for-phone">
-                    <div class="phone-icon">
-                        <span><i class="fa-solid fa-phone"></i></span>
-                    </div>
-                    <div class="phone-content">
-                        <p>9873651414</p>
-                        <p>9873351414</p>
-                    </div>
-                </div>
+
+            <div class="for-email">
+               <div class="email-icon">
+                  <span><i class="fa-solid fa-envelope"></i></span>
+               </div>
+               <div class="email-content">
+                  <p>atalparivahan@gmail.com</p>
+               </div>
             </div>
-              </div>
-              </footer>
+
+            <div class="for-phone">
+               <div class="phone-icon">
+                  <span><i class="fa-solid fa-phone"></i></span>
+               </div>
+               <div class="phone-content">
+                  <p>9873651414</p>
+                  <p>9873351414</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
             <div class="lower-section">
                 <div class="lower-para">
                 <p class="privacy-policy">

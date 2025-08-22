@@ -1,0 +1,121 @@
+.row .nav-123{
+    padding:50px !important;
+    font-size:30px !important;
+    color:black !important;
+    background-color: black;
+}
+.flex-column {
+    flex-direction: column !important;
+    color: black !important;
+    gap: 25px;
+}
+.about,.home,.skills,.education {
+    color:#818181 !important;
+}
+.about:hover,.home:hover,.skills:hover,.education:hover {
+    color: #7dba5c !important;
+}
+.my-class{
+    padding:0px;
+    margin:0px;
+    margin-top:35px;
+}
+.second-section {
+    /* padding: 50px; */
+    background: black;
+    color: #818181;
+}
+.swipe-wrapper{
+    height:100vh;
+}
+.carousel-item{
+    height:100vh !important;
+}
+.container{
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+.scroll-class{
+    overflow-y: scroll;
+}
+.ist-img{
+    height:100vh !important;
+    overflow: hidden;
+}
+.name{
+    FONT-SIZE: 27px;
+    width: 60%;
+    text-align: left;
+}
+.para{
+    width: 100%;
+    font-size: 27px;
+    text-align: left;
+}
+.content-h1{
+    padding: 50px 0px;
+    font-weight: 700;
+}
+.details{
+    font-size: 20px;
+    padding: 20px;
+}
+.content-one ul{
+    list-style: none;
+    padding: 0px;
+}
+.about-me{
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 32px;
+    padding-left:10px;
+}
+.divider{
+    width: 70px;
+    height: 5px;
+    background-color: #7dba5c;
+    margin: 30px 0 50px 0;
+}
+.logo-div img{
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+}
+.logo-div{
+    padding-left:20px;
+}
+.resume{
+    background-color: black;
+    color:#818181;
+    padding:10px;
+    border:2px solid #7dba5c;;
+}
+.signature-img{
+    width: 170px;
+    height: 113px;
+}
+.nav-item{
+    font-size: 20px;
+}
+.para-h{
+    font-size: 18px;
+    padding-left: 10px;
+}
+.education-card{
+    display: flex;
+    gap: 10px;
+}
+.image{
+    color:#7dba5c;
+}
+.image:hover{
+    color:#818181;
+}
+.image i{
+    font-size:75px;
+}
+.for-content p{
+    margin-bottom:2px;
+}
+
