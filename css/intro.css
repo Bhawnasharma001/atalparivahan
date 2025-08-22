@@ -1,19 +1,78 @@
-.row .nav-123{
-    padding:50px !important;
-    font-size:30px !important;
-    color:black !important;
+.nav-container123{
+    padding:20px;
+    font-size:30px ;
+    width:20%;
     background-color: black;
+    position:relative;
+    overflow: hidden;
+}
+.my-class01{
+    display:flex;
+}
+.package-for-you-slider {
+    width: 100%;
+    height: 100vh;
+    /* important for vertical scroll */
+}
+
+    .package-for-you-slider .swiper-slide {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.phone-view-nav .flex-column{
+    gap: 10px;
+    margin-bottom: 20px;
+}
+/* .phone-view-nav{
+    display: none;
+    background: black;
+    width: 100%;
+} */
+.phone-view-nav {
+    background: black;
+    width: 100%;
+    max-height: 0;           /* initially hidden */
+    overflow: hidden;        /* hide content */
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;  /* smooth effect */
+    position: absolute;
+    right: 0;
+}
+
+/* When active class is added */
+.phone-view-nav.active {
+    max-height: 500px;   /* adjust as needed */
+    opacity: 1;
+    transform: translateY(0);
+}
+.package-for-you-slider .swiper-slide-active {
+    width: 70% !important;
+ }
+.second-section{
+    width:80%;
+    position: relative;
 }
 .flex-column {
     flex-direction: column !important;
     color: black !important;
     gap: 25px;
 }
-.about,.home,.skills,.education {
-    color:#818181 !important;
+.flex-column .nav-item .nav-link{
+    border-radius: 0px 20px 20px 0px;
+    transition: transform 0.3s ease;
 }
-.about:hover,.home:hover,.skills:hover,.education:hover {
-    color: #7dba5c !important;
+.flex-column .nav-item .nav-link:hover{
+    transform: translateX(5px);
+}
+.about, .home, .skills, .education,.project {
+    color: #818181 !important;
+    background: black;
+}
+.about:hover,.home:hover,.skills:hover,.education:hover,.project:hover {
+    color: white !important;
+    background: #7dba5c;
 }
 .my-class{
     padding:0px;
@@ -29,19 +88,50 @@
     height:100vh;
 }
 .carousel-item{
-    height:100vh !important;
-}
-.container{
-    height: 100vh;
-    overflow-y: auto;
-    scrollbar-width: none;
-}
-.scroll-class{
-    overflow-y: scroll;
-}
-.ist-img{
-    height:100vh !important;
+    /* height:100vh; */
+    height: 450px;
+    width: 100%;
     overflow: hidden;
+}
+ 
+.scroll-class{ 
+    height: 100vh;
+    overflow-y: auto; 
+    padding: 40px 30px 100px 10px;
+}
+.scroll-class::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scroll-class::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.scroll-class::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.scroll-class::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.carasol-my-website .carousel-inner{
+        height: 100vh;
+    display: flex
+;
+    align-items: center;
+}
+.ist-img{ 
+    overflow: hidden;
+    height:100%;
+    object-fit: cover;
+}
+.ist-img1{
+    height:auto;
+    overflow: hidden;
+    object-fit: cover;
 }
 .name{
     FONT-SIZE: 27px;
@@ -58,15 +148,15 @@
     font-weight: 700;
 }
 .details{
-    font-size: 20px;
-    padding: 20px;
+    font-size: 14px;
+    padding: 10px;
 }
 .content-one ul{
     list-style: none;
     padding: 0px;
 }
 .about-me{
-    font-size: 19px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 32px;
     padding-left:10px;
@@ -77,14 +167,27 @@
     background-color: #7dba5c;
     margin: 30px 0 50px 0;
 }
-.logo-div img{
-    width: 72px;
-    height: 72px;
-    border-radius: 10px;
+.name1{
+    color: #818181;
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    width:100%;
+    text-align:center;
+}
+.name1:hover{
+    color:white;
 }
 .logo-div{
-    padding-left:20px;
+    text-align: center;
 }
+.logo-div img {
+    width: 100px;
+    height: 105px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
 .resume{
     background-color: black;
     color:#818181;
@@ -96,7 +199,7 @@
     height: 113px;
 }
 .nav-item{
-    font-size: 20px;
+    font-size: 17px;
 }
 .para-h{
     font-size: 18px;
@@ -106,6 +209,10 @@
     display: flex;
     gap: 10px;
 }
+.education-para{
+    font-size: 14px;
+    line-height: 25px;
+}
 .image{
     color:#7dba5c;
 }
@@ -113,9 +220,193 @@
     color:#818181;
 }
 .image i{
-    font-size:75px;
+    font-size:60px;
+}
+.for-content{
+    font-size:14px;
 }
 .for-content p{
     margin-bottom:2px;
 }
+.description{
+    font-size: 14px;
+}
+.skills-para{
+    font-size: 14px;
+    line-height: 25px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    /* display: none; */
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+    list-style: none;
+}
+.knowledge-para{
+    font-size: 14px;
+    line-height: 25px;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: 'next';
+    display:none;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    display:none;
+}
+button:not(:disabled) {
+    cursor: pointer;
+}
+.div-scrool-skillbar .skill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    margin: 20px 0px;
+    }
 
+   .div-scrool-skillbar .circle {
+      position: relative;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: conic-gradient(#7dff7d var(--percent), #333 var(--percent));
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+   .div-scrool-skillbar .circle::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: #111;
+      border-radius: 50%;
+    }
+
+   .div-scrool-skillbar .circle span {
+      position: absolute;
+      font-size: 20px;
+      font-weight: bold;
+      color: #7dff7d;
+    }
+
+   .div-scrool-skillbar .text {
+      display: flex;
+      flex-direction: column;
+    }
+
+   .div-scrool-skillbar .text h3 {
+      margin: 0;
+      font-size: 14px;
+      color: #818181;
+    }
+
+   .div-scrool-skillbar .text p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #aaa;
+    }
+    .skill{
+        margin-bottom:15px;
+    }
+    .div-scrool-skillbar{
+        margin-top:20px;
+    }
+.package-for-you-slider .swiper-slide:last-child{
+    width: 100% !important;
+    height: 100% !important; 
+  }
+
+
+@media (max-width: 993px) {
+    .DIV-D{
+        display:none;
+    }
+}
+@media (max-width: 768px) {
+  .nav-container123 {
+  display:none;
+  }
+  .second-section {
+    width: 100%;
+     margin-top: 100px;
+   
+  }
+  .package-for-you-slider .swiper-slide:last-child{
+    width: 100% !important;
+    height: 100% !important; 
+  }
+
+
+.ist-img { 
+    overflow: hidden;
+    object-fit: cover;
+}
+.div-scrool-skillbar .circle::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background: #111;
+    border-radius: 50%;
+}
+.div-scrool-skillbar .circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: conic-gradient(#7dff7d var(--percent), #333 var(--percent));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-scrool-skillbar .circle span {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7dff7d;
+}
+.div-scrool-skillbar .text h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #818181;
+}
+.package-for-you-slider .swiper-slide-active {
+    width: 100% !important; 
+    overflow:auto
+}
+}
+@media (max-width: 767px) {
+
+    .ist-img1{
+        height:100%;
+    }
+      .package-for-you-slider .swiper-slide-active {
+    
+    height: 90% !important; 
+}
+.carasol-my-website .carousel-item {
+    height: 90vh;
+}
+
+.carasol-my-website .carousel-inner {
+    height: 90vh;
+}
+}

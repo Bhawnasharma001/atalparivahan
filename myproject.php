@@ -4,40 +4,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <title>Atal Parivahan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="css/myproject.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
-       .package-for-you-slider .swiper-slide-active{
+        .package-for-you-slider .swiper-slide-active {
             width: 70% !important;
+        }
+
+        .container-flude {
+            position: sticky;
+            top: 0px;
+            z-index: 10;
+
+        }
+
+        .phone-navigation {
+            /* display: none; */
+        }
+
+        .phone-view-nav {
+            background-color: #0072ec;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .icon-menu01 {
+            font-size: 30px;
+        }
+
+        .image10 {
+            width: 50px;
+        }
+
+        .inside-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #0072ec;
+            color: white;
+        }
+
+        .nav-list01 {
+            list-style: none;
+            padding-left: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            color: black;
+            font-size: 17px;
+        }
+
+        .phone-viewnaV {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container-flude">
-        <div class="top-div">
-            <div class="top">
-                <div class="top1">
-                    <span> <i class="fa-solid fa-envelope"></i></span>
-                    <p>atalparivahan@gmail.com</p>
-                    <div class="phone">
-                        <span id="con"><i class="fa-solid fa-phone"></i></span>
-                        <p>9873651414</p>
-                    </div>
-                </div>
-                <div class="right">
-                    <span class="facebook"> <i class="fa-brands fa-facebook-f"></i></span>
-                    <span class="insta"><a href="instagram.com"> <i class="fa-brands fa-instagram"></i></a></span>
-                    <span class="twit"> <i class="fa-brands fa-twitter"></i></span>
-                    <span class="in"> <i class="fa-brands fa-linkedin"></i></span>
+<div class="phone-naviga3tion1">
+     
+    <a href="#top-bar" class="go-top-btn"><i class="fa-solid fa-arrow-up arrow-scroll"></i> </a>   
+</div>
+
+
+
+    <div class="phone_viewnavbar">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel" width="50%">
+            <div class="offcanvas-header">
+                <img src="img/aplogo-preview.png" class="image132" width="60px" height="50px" alt="Atal Parivahan Logo">
+
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="phone-viewnaV">
+                    <ul class="nav-list01">
+                        <li class="nav-item01">
+                            <a class="nav-link" href="myproject.php">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.php">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.php">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.php">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quote.php">Send a Quote</a>
+                        </li>
                 </div>
             </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="top" id="top-bar">
+        <div class="top1">
+            <span> <i class="fa-solid fa-envelope"></i></span>
+            <p>atalparivahan@gmail.com</p>
+            <div class="phone">
+                <span id="con"><i class="fa-solid fa-phone"></i></span>
+                <p>9873651414</p>
+            </div>
+        </div>
+        <div class="right">
+            <span class="facebook"> <i class="fa-brands fa-facebook-f"></i></span>
+            <span class="insta"><i class="fa-brands fa-instagram"></i></a></span>
+            <span class="twit"> <i class="fa-brands fa-twitter"></i></span>
+            <span class="in"> <i class="fa-brands fa-linkedin"></i></span>
+        </div>
+    </div>
+    <div class="phone-navbar">
+        <div class="phone-view-logo">
+            <a>
+                <img src="img/aplogo-preview.png" class="image10" alt="Atal Parivahan Logo">
+            </a>
+        </div>
+        <div class="phone-view-icon">
+            <div class="div-menubar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+    <div class="container-flude">
+        <div class="top-div">
             <div class="heading">
                 <nav class="nav">
 
@@ -76,29 +188,35 @@
                     </div>
                 </div>
                 <div class="carousel-item ">
-                    <div class="herosimg2">
+                    <div class="heros-123">
                         <img src="img/stock2.jpg" class="heros-img01">
                         <div class="overlay"></div>
                         <div class="content-inner">
                             <p class="uppermost">Your Logistics,Our Priority</p>
-                            <h1 class="main-headinghero">Secure & Scalable <span class="freight"> <strong> WAREHOUSING </strong></span> Solutions</h1>
-                            <p class="para1">Our state-of-the-art warehouses ensure your goods are stored safely, managed efficiently, and always ready for fast dispatch — no matter the scale of your operation.</p>
-                            <button class="btn">Send a Quote</button>
+                            <h1 class="main-headinghero">Secure & Scalable <span class="freight"> <strong> WAREHOUSING
+                                    </strong></span> Solutions</h1>
+                            <p class="para1">Our state-of-the-art warehouses ensure your goods are stored safely,
+                                managed efficiently, and always ready for fast dispatch — no matter the scale of
+                                your operation.</p>
+                            <button class="btn-quote">Send a Quote</button>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="herosimg3">
+                    <div class="heros-123">
                         <img src="img/packers2.png" class="heros-img01">
                         <div class="overlay"></div>
                         <div class="content-inner">
                             <p class="uppermost">Global Reach.Local Service</p>
-                            <h1 class="main-headinghero"><strong><span class="freight">Affordable </strong></span> Packages<span class="freight"> <strong> Unbeatable</strong></span>  Services </h1>
-                            <p class="para1">With a passion for delivering more than goods, we aim to be your trusted logistics partner — offering speed, transparency, and a commitment to excellence in every journey.</p>
-                            <button class="btn">Send a Quote</button>
+                            <h1 class="main-headinghero"><strong><span class="freight">Affordable </strong></span>
+                                Packages<span class="freight"> <strong> Unbeatable</strong></span> Services </h1>
+                            <p class="para1">With a passion for delivering more than goods, we aim to be your trusted
+                                logistics partner — offering speed, transparency, and a commitment to excellence in
+                                every journey.</p>
+                            <button class="btn-quote">Send a Quote</button>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly"
@@ -209,135 +327,113 @@
     <div class="services-section">
         <h4 class="str-h4">OUR STRENGTH</h4>
         <h2 class="str-h2">Welcome To Atal Parivahan</h2>
-        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
-            centered-slides="false" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
-            coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
-            <swiper-slide>
-                <div class="inside-swiper">
-                    <span class="service-img"><i class="fa-solid fa-handshake"></i></span>
-                    <h4 class="services-points123">Packers & Movers</h4>
-                    <p>
-                        Our company is appreciated for offering reliable packaging services for packing of all kinds of
-                        household goods. We have our efficient team members to ensure that proper care is taken while
-                        packing the products. As such there is breakage or damage of the goods while in storage or
-                        transit. The packaging materials used by us to pack the household items are:
-                    </p>
-                </div>
-                <style>
-                    .carousel-control-prev {
-                        position: absolute;
-                        z-index: -1;
-                    }
-                </style>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="inside-swiper">
-                    <span class="service-img"><i class="fa-solid fa-car"></i></span>
-                    <h4 class="services-points123">Car Transporation</h4>
-                    <p>
-                        Atal Parivahan is a global name in providing car transportation services. Our network of trusted
-                        agents situated in strategic markets help us in offering effective and comprehensive
-                        international and domestic services to our clients. We also ensure that the car is safely
-                        delivered to the desired address within the specified time frame. We also offer door-to-door
-                        transportation services to effectively cater to our clients.
-                    </p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="inside-swiper">
-                    <span class="service-img"><i class="fa-solid fa-building"></i></span>
-                    <h4 class="services-points123">Office Shifting</h4>
-                    <p>
-                        We are also providing efficient office transportation service in shifting all the equipments and
-                        furnitures. Our office shifting services are comprehensive and prompt offering complete comfort
-                        to our clients. We offer office relocation services to our clients located in any region of
-                        India. Moreover, these services are supervised by our team of experts who ensure that the
-                        furniture and other office equipments are safely packed and transported.
-                    </p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="inside-swiper">
-                    <span class="service-img"><i class="fa-solid fa-square-check"></i></span>
-                    <h4 class="services-points123">Insurance Services</h4>
-                    <p>
-                        To help our customer cover the value of their goods damaged during any unforeseen events, our
-                        company also provides insurance services.
-                        The amount of insurance is calculated on the total value of the goods declared by the client. We
-                        charge a very nominal amount of money for providing this service. We provide a carrier risk of
-                        3% on declare value and if any accident takes place, we take the guarantee of getting the claim
-                        settled. Besides, if the client opts for any authorized insurance company, in that case, the
-                        claim will be settled by the company directly.
-                    </p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="inside-swiper">
-                    <span class="service-img"><i class="fa-solid fa-truck"></i></i></span>
-                    <h4 class="services-points123">Transportation Services</h4>
-                    <p>
-                        Our efficient transportation services are supervised by a team of diligent workers, having
-                        significant experience in their respective fields. we possess a team of trained drivers for
-                        different types of vehicles. Perfect Packers and Movers is providing transportation services for
-                        all kinds of goods such as : Commercial goods Corporate goods Household goods Cars Bulk cargo
-                        and others We offer our transportation services to all over India and also for all kinds of cars
-                        through our special Car Carrier.
-                    </p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="inside-swiper">
-                    <span class="service-img"><i class="fa-solid fa-house"></i></i></span>
-                    <h4 class="services-points123">Warehousing</h4>
-                    <p>
-                        We provide efficient warehousing services to our clients. We possess a well maintained and
-                        spacious warehouse that has abundant storing space, even for bulk cargo. We are well equipped
-                        with all the latest facilities in our warehouse such as cargo movement trolleys, electronic
-                        security gadgets, material handling equipments, computerized inventory management system, light
-                        assembly and cross docking.
-                        Moreover, our warehouse is maintained by a team of experienced and trained staff.
-                    </p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="inside-swiper">
-                    <span class="service-img"><i class="fa-solid fa-lock"></i></span>
-                    <h4 class="services-points123">Local Shifting</h4>
-                    <p>
-                        We provide outstanding local transportation services with an goal of attaining utmost client
-                        satisfaction. Our organization is providing efficient, quick and complete freight services to
-                        our clients across the country. In order to serve you the best, our company is offering
-                        door-to-door transportation services to our clients.
-                    </p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="inside-swiper">
-                    <span class="service-img"><i class="fa-solid fa-lock-open"></i></span>
-                    <h4 class="services-points123">Unloading Services</h4>
-                    <p>
-                        Unloading of goods is not so easy. It is a very meticulous task and requires special skills and
-                        training to ensure that the goods are safely handled. We make use of latest handling equipment
-                        in order to provide most efficient and prompt unloading services to our clients. We also possess
-                        a team of experts that is capable of handling all kinds of goods, be it high end products or
-                        bulk cargo.
-                    </p>
-                </div>
-            </swiper-slide>
-            <swiper-slide>
-                <div class="inside-swiper">
-                    <span class="service-img"><i class="fa-solid fa-truck-ramp-box"></i></span>
-                    <h4 class="services-points123">Loading Services</h4>
-                    <p>
-                        Our expert loading team ensures your belongings are handled with precision and care, minimizing
-                        the risk of damage during transit. Whether it's bulky furniture, delicate items, or packed
-                        boxes, we use the right equipment and techniques to load everything securely into transport
-                        vehicles. With a focus on safety, speed, and organization, our loading service guarantees a
-                        hassle-free moving experience from start to finish.
-                    </p>
-                </div>
-            </swiper-slide>
-        </swiper-container>
+        <div class="new-swipercss">
+            <!-- Swiper Container -->
+            <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
+                centered-slides="false" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+                coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+                <swiper-slide>
+                    <div class="inside-swiper"> <span class="service-img"><i class="fa-solid fa-handshake"></i></span>
+                        <h4 class="services-points123">Packers & Movers</h4>
+                        <p> Our company is appreciated for offering reliable packaging services for packing of all kinds
+                            of household goods. We have our efficient team members to ensure that proper care is taken
+                            while packing the products. As such there is breakage or damage of the goods while in
+                            storage or transit. The packaging materials used by us to pack the household items are: </p>
+                    </div>
+                    <style>
+                        .carousel-control-prev {
+                            position: absolute;
+                            z-index: -1;
+                        }
+                    </style>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="inside-swiper"> <span class="service-img"><i class="fa-solid fa-car"></i></span>
+                        <h4 class="services-points123">Car Transporation</h4>
+                        <p> Atal Parivahan is a global name in providing car transportation services. Our network of
+                            trusted agents situated in strategic markets help us in offering effective and comprehensive
+                            international and domestic services to our clients. We also ensure that the car is safely
+                            delivered to the desired address within the specified time frame. We also offer door-to-door
+                            transportation services to effectively cater to our clients. </p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="inside-swiper"> <span class="service-img"><i class="fa-solid fa-building"></i></span>
+                        <h4 class="services-points123">Office Shifting</h4>
+                        <p> We are also providing efficient office transportation service in shifting all the equipments
+                            and furnitures. Our office shifting services are comprehensive and prompt offering complete
+                            comfort to our clients. We offer office relocation services to our clients located in any
+                            region of India. Moreover, these services are supervised by our team of experts who ensure
+                            that the furniture and other office equipments are safely packed and transported. </p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="inside-swiper"> <span class="service-img"><i
+                                class="fa-solid fa-square-check"></i></span>
+                        <h4 class="services-points123">Insurance Services</h4>
+                        <p> To help our customer cover the value of their goods damaged during any unforeseen events,
+                            our company also provides insurance services. The amount of insurance is calculated on the
+                            total value of the goods declared by the client. We charge a very nominal amount of money
+                            for providing this service. We provide a carrier risk of 3% on declare value and if any
+                            accident takes place, we take the guarantee of getting the claim settled. Besides, if the
+                            client opts for any authorized insurance company, in that case, the claim will be settled by
+                            the company directly. </p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="inside-swiper"> <span class="service-img"><i class="fa-solid fa-truck"></i></i></span>
+                        <h4 class="services-points123">Transportation Services</h4>
+                        <p> Our efficient transportation services are supervised by a team of diligent workers, having
+                            significant experience in their respective fields. we possess a team of trained drivers for
+                            different types of vehicles. Perfect Packers and Movers is providing transportation services
+                            for all kinds of goods such as : Commercial goods Corporate goods Household goods Cars Bulk
+                            cargo and others We offer our transportation services to all over India and also for all
+                            kinds of cars through our special Car Carrier. </p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="inside-swiper"> <span class="service-img"><i class="fa-solid fa-house"></i></i></span>
+                        <h4 class="services-points123">Warehousing</h4>
+                        <p> We provide efficient warehousing services to our clients. We possess a well maintained and
+                            spacious warehouse that has abundant storing space, even for bulk cargo. We are well
+                            equipped with all the latest facilities in our warehouse such as cargo movement trolleys,
+                            electronic security gadgets, material handling equipments, computerized inventory management
+                            system, light assembly and cross docking. Moreover, our warehouse is maintained by a team of
+                            experienced and trained staff. </p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="inside-swiper"> <span class="service-img"><i class="fa-solid fa-lock"></i></span>
+                        <h4 class="services-points123">Local Shifting</h4>
+                        <p> We provide outstanding local transportation services with an goal of attaining utmost client
+                            satisfaction. Our organization is providing efficient, quick and complete freight services
+                            to our clients across the country. In order to serve you the best, our company is offering
+                            door-to-door transportation services to our clients. </p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="inside-swiper"> <span class="service-img"><i class="fa-solid fa-lock-open"></i></span>
+                        <h4 class="services-points123">Unloading Services</h4>
+                        <p> Unloading of goods is not so easy. It is a very meticulous task and requires special skills
+                            and training to ensure that the goods are safely handled. We make use of latest handling
+                            equipment in order to provide most efficient and prompt unloading services to our clients.
+                            We also possess a team of experts that is capable of handling all kinds of goods, be it high
+                            end products or bulk cargo. </p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="inside-swiper"> <span class="service-img"><i
+                                class="fa-solid fa-truck-ramp-box"></i></span>
+                        <h4 class="services-points123">Loading Services</h4>
+                        <p> Our expert loading team ensures your belongings are handled with precision and care,
+                            minimizing the risk of damage during transit. Whether it's bulky furniture, delicate items,
+                            or packed boxes, we use the right equipment and techniques to load everything securely into
+                            transport vehicles. With a focus on safety, speed, and organization, our loading service
+                            guarantees a hassle-free moving experience from start to finish. </p>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
         <div class="first-para">
             <p>
                 Our valuable process experience assist us in offering clients reliable office relocation, industry
@@ -683,7 +779,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="myproject.js"></script>
+    <script src="js/myproject.js"></script>
 
     <script>
         $('.sliderfirst').owlCarousel({
@@ -761,6 +857,30 @@
                 2000: {
                     slidesPerView: 1,
                 },
+            },
+        });
+    </script>
+
+    <script>
+        const swiper = new Swiper(".mySwipernew", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 120,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
         });
     </script>
