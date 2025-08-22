@@ -27,6 +27,7 @@
      <!-- Custom CSS -->
      <link rel="stylesheet" href="css/intro.css">
     <style>
+        /* raghubir */
          .phone-view .div-phone-flex {
              display: flex;
              justify-content: space-between;
